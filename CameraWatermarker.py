@@ -82,7 +82,7 @@ def camera_watermarker(img_file,output_dir='./',output_suffix='',str_map={},bord
 
     org_img_w = org_img.size[0]
     org_img_h = org_img.size[1]
-    border_w = int(org_img_w * border)
+    border_w = int(org_img_w * border) if org_img_w < org_img_h else int(org_img_h * border)
     wm_width = org_img_w # 原始宽度
     wm_heigh = int(org_img_h*0.06) # 原始照片高度的百分比
     res_img_w = wm_width + border_w*2
