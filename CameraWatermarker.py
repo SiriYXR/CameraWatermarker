@@ -208,7 +208,7 @@ def camera_watermarker(img_file,output_dir='./',output_suffix='',str_map={},bord
 
 if __name__ == '__main__':  
 
-    img_file='./img/demo.jpg' # 原始图片
+    img_file='./img/demo2.jpg' # 原始图片
 
     # 字符串映射
     str_map = {'ILCE-7CM2':'A7C2'} # 将扩展信息中解析出的原始文本映射成你想要的数值
